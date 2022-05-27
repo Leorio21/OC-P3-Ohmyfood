@@ -94,6 +94,7 @@ header {
   width: 100%;
   text-align: center;
   padding: 15px 0px;
+  position: relative;
 }
 
 .header--logo {
@@ -242,5 +243,18 @@ footer a {
           flex-direction: column;
   row-gap: 20px;
   background-color: #F2F2F2;
+}
+
+#restaurants a {
+  color: #000;
+  text-decoration: none;
+}
+
+.icon--backIndex {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  left: 15px;
+  top: 22px;
 }
 /*# sourceMappingURL=style.css.map */
