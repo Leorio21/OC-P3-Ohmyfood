@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.header--logo {
+    width: 50%;
+    max-width: 392px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    font-size: 14px;
+    background-color: #3b3b3b;
+    padding: 20px 0px 40px 20px
+}
+
+.title--footer {
+    margin-bottom: 10px;
+    color: #FFF;
+    font-weight: unset;
+    font-size: 18px;
+}
+
+footer a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.icon--footer {
+    margin-right: 10px;
+}
