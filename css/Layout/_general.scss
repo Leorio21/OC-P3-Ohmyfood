@@ -3,6 +3,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
+
 .title {
     font-size: 24px;
 }
@@ -12,7 +17,7 @@
 }
 
 .button--primary {
-    text-decoration: none;
+    display: block;
     margin: auto;
     padding: 15px 20px;
     color: #FFF;
@@ -21,7 +26,25 @@
     box-shadow: 3px 3px 5px #CACACA;
 }
 
+.button--validation {
+    width: 150px;
+}
+
 .button--primary:hover {
     filter: brightness(1.2);
     box-shadow: 3px 3px 5px #808080;
+}
+
+
+.icon--like {
+    font-size: 22px;
+    color:#818181;
+}
+
+.icon--like:hover {
+    font-weight: bold;
+    background: linear-gradient($color-primary, $color-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
