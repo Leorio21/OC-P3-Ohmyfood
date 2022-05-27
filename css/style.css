@@ -23,6 +23,13 @@
           box-shadow: 3px 3px 5px #CACACA;
 }
 
+.button--primary:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-box-shadow: 3px 3px 5px #808080;
+          box-shadow: 3px 3px 5px #808080;
+}
+
 .restaurant--card {
   -webkit-box-shadow: 5px 5px 10px #cacaca;
           box-shadow: 5px 5px 10px #cacaca;

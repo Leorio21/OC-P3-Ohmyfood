@@ -20,3 +20,8 @@
     border-radius: 50px;
     box-shadow: 3px 3px 5px #CACACA;
 }
+
+.button--primary:hover {
+    filter: brightness(1.2);
+    box-shadow: 3px 3px 5px #808080;
+}
