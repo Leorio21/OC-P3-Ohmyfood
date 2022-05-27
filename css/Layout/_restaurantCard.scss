@@ -43,6 +43,9 @@
 }
 
 .icon--like:hover {
-    /*color: linear-gradient($color-primary, $color-secondary);*/
     font-weight: bold;
+    background: linear-gradient($color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
