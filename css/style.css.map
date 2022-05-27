@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "Utils/_var.scss",
+        "Layout/_general.scss",
+        "Layout/_restaurantCard.scss",
+        "Pages/_headFoot.scss",
+        "Pages/_index.scss",
+        "Pages/_menu.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
