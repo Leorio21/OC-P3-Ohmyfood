@@ -1,5 +1,6 @@
 * {
     margin: 0px;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -16,7 +17,7 @@ a {
     font-family: 'Shrikhand', sans-serif;
 }
 
-.button--primary {
+.button {
     display: block;
     margin: auto;
     padding: 15px 20px;
@@ -24,27 +25,31 @@ a {
     background: linear-gradient($color-secondary, $color-primary);
     border-radius: 50px;
     box-shadow: 3px 3px 5px #CACACA;
+    transition: 0.5s;
+}
+
+.button:hover {
+    filter: brightness(1.2);
+    box-shadow: 3px 3px 5px #808080;
 }
 
 .button--validation {
     width: 150px;
 }
 
-.button--primary:hover {
-    filter: brightness(1.2);
-    box-shadow: 3px 3px 5px #808080;
-}
-
-
 .icon--like {
     font-size: 22px;
-    color:#818181;
+    background: #818181;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s ease-in;
 }
 
 .icon--like:hover {
-    font-weight: bold;
     background: linear-gradient($color-primary, $color-secondary);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    font-weight: bold;
 }

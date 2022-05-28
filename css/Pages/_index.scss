@@ -1,3 +1,18 @@
+@mixin step--form {
+    color: #FFF;
+    position: absolute;
+    left: -13px;
+    top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    z-index: 2;
+}
+
 .location {
     text-align: center;
     font-size: 16px;
@@ -36,41 +51,17 @@
 
 .step--one::before {
     content: '1';
-    color: #FFF;
-    position: absolute;
-    left: -5px;
-    top: 20px;
-    z-index: 2;
+    @include step--form;
 }
 
 .step--two::before {
     content: '2';
-    color: #FFF;
-    position: absolute;
-    left: -5px;
-    top: 20px;
-    z-index: 2;
+    @include step--form;
 }
 
 .step--three::before {
     content: '3';
-    color: #FFF;
-    position: absolute;
-    left: -5px;
-    top: 20px;
-    z-index: 2;
-}
-
-.step::after {
-    content: ' ';
-    position: absolute;
-    left: -13px;
-    top: 16px;
-    width: 26px;
-    height: 26px;
-    background-color: $color-primary;
-    border-radius: 50%;
-    z-index: 1;
+    @include step--form;
 }
 
 .icon {
@@ -91,9 +82,4 @@
     flex-direction: column;
     row-gap: 20px;
     background-color: #F2F2F2;
-}
-
-#restaurants a {
-    color: #000;
-    text-decoration: none;
 }
