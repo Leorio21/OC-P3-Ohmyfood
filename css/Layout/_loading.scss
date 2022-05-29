@@ -1,3 +1,5 @@
+@use '../Utils/var';
+
 $num-bars: 3;
 $anim-dur: 1000ms;
 $anim-delay: 200ms;
@@ -27,13 +29,13 @@ $anim-delay: 200ms;
     }
     
     &--1 {
-        background-color: $color-primary;
+        background-color: var.$color-primary;
     }
     &--2 {
-        background-color: $color-secondary;
+        background-color: var.$color-secondary;
     }
     &--3 {
-        background-color: $color-tertiary;
+        background-color: var.$color-tertiary;
     }
 }
 

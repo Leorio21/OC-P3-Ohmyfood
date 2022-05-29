@@ -1,3 +1,5 @@
+@use '../Utils/var';
+
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -22,7 +24,7 @@ a {
     margin: auto;
     padding: 15px 20px;
     color: #FFF;
-    background: linear-gradient($color-secondary, $color-primary);
+    background: linear-gradient(var.$color-secondary, var.$color-primary);
     border-radius: 50px;
     box-shadow: 3px 3px 5px #CACACA;
     transition: 0.5s;
@@ -48,7 +50,7 @@ a {
     left: 0px;
     font-weight: bold;
     font-size: 22px;
-    background: linear-gradient($color-primary, $color-secondary);
+    background: linear-gradient(var.$color-primary, var.$color-secondary);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

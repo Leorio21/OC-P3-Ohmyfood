@@ -1,3 +1,5 @@
+@use '../Utils/var';
+
 .menu {
     background-color: #F2F2F2;
 }
@@ -60,7 +62,7 @@
     content: ' ';
     width: 40px;
     height: 3px;
-    background-color: $color-tertiary;
+    background-color: var.$color-tertiary;
     position: absolute;
     left: 0px;
     top: 22px;
@@ -112,7 +114,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-tertiary;
+    background-color: var.$color-tertiary;
     height: 60px;
     width: 60px;
     color: #FFF;
