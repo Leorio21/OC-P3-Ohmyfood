@@ -169,7 +169,7 @@ a {
 
 .restaurant--illustration {
   width: 100%;
-  height: 150px;
+  height: 190px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0px 0px;
@@ -179,11 +179,16 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .restaurant--name {
   margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.restaurant--location {
+  font-size: 16px;
 }
 
 .button {
@@ -194,12 +199,13 @@ a {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
   box-shadow: 3px 3px 5px #CACACA;
-  transition: 0.5s;
+  transition: all 0.3s ease-in-out;
 }
 
 .button:hover {
   filter: brightness(1.2);
   box-shadow: 3px 3px 5px #808080;
+  transition: all 0.3s ease-in-out;
 }
 
 .button--validation {
@@ -410,7 +416,7 @@ footer a {
 
 .menu--illustration {
   width: 100%;
-  max-height: 350px;
+  max-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -474,38 +480,42 @@ footer a {
           animation: dish__revelation 0.6s both ease-in-out;
 }
 .dish--1 {
-  -webkit-animation-delay: 0.0666666667s;
-          animation-delay: 0.0666666667s;
+  -webkit-animation-delay: 0.06s;
+          animation-delay: 0.06s;
 }
 .dish--2 {
-  -webkit-animation-delay: 0.1333333333s;
-          animation-delay: 0.1333333333s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
 }
 .dish--3 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.18s;
+          animation-delay: 0.18s;
 }
 .dish--4 {
-  -webkit-animation-delay: 0.2666666667s;
-          animation-delay: 0.2666666667s;
+  -webkit-animation-delay: 0.24s;
+          animation-delay: 0.24s;
 }
 .dish--5 {
-  -webkit-animation-delay: 0.3333333333s;
-          animation-delay: 0.3333333333s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 .dish--6 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 0.36s;
+          animation-delay: 0.36s;
 }
 .dish--7 {
-  -webkit-animation-delay: 0.4666666667s;
-          animation-delay: 0.4666666667s;
+  -webkit-animation-delay: 0.42s;
+          animation-delay: 0.42s;
 }
 .dish--8 {
-  -webkit-animation-delay: 0.5333333333s;
-          animation-delay: 0.5333333333s;
+  -webkit-animation-delay: 0.48s;
+          animation-delay: 0.48s;
 }
 .dish--9 {
+  -webkit-animation-delay: 0.54s;
+          animation-delay: 0.54s;
+}
+.dish--10 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }

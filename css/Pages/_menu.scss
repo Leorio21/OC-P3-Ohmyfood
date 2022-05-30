@@ -1,6 +1,6 @@
 @use '../Utils/var';
 
-$num-dish: 9;
+$num-dish: 10;
 $anim-dur: .6s;
 $anim-delay: calc($anim-dur / $num-dish);
 
@@ -22,7 +22,7 @@ $anim-delay: calc($anim-dur / $num-dish);
 
 .menu--illustration {
     width: 100%;
-    max-height: 350px;
+    max-height: 200px;
     object-fit: cover;
 }
 
