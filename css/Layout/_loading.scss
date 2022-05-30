@@ -22,11 +22,11 @@ $anim-delay: calc($anim-dur / $num-bars);
 
 .load__bar {
     position: absolute;
-    width: 50px;
-    height: 20px;
-    margin: 50vh 0px;
+    width: 40px;
+    height: 40px;
+    margin: 42vh 0px;
     border-radius: 90% 0% 90% 10%;
-    transform-origin: 0% 100%;
+    transform-origin: 0% 130%;
     &--1 {
         background: linear-gradient(var.$color-primary, var.$color-tertiary);
     }

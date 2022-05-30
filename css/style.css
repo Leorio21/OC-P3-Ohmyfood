@@ -36,11 +36,11 @@ a {
 
 .load__bar {
   position: absolute;
-  width: 50px;
-  height: 20px;
-  margin: 50vh 0px;
+  width: 40px;
+  height: 40px;
+  margin: 42vh 0px;
   border-radius: 90% 0% 90% 10%;
-  transform-origin: 0% 100%;
+  transform-origin: 0% 130%;
   -webkit-animation: loading__bars 1000ms backwards infinite linear;
           animation: loading__bars 1000ms backwards infinite linear;
 }
@@ -469,6 +469,45 @@ footer a {
   background-color: #FFF;
   border-radius: 20px;
   box-shadow: 3px 3px 8px #cacaca;
+  overflow: hidden;
+  -webkit-animation: dish__revelation 0.6s both ease-in-out;
+          animation: dish__revelation 0.6s both ease-in-out;
+}
+.dish--1 {
+  -webkit-animation-delay: 0.0666666667s;
+          animation-delay: 0.0666666667s;
+}
+.dish--2 {
+  -webkit-animation-delay: 0.1333333333s;
+          animation-delay: 0.1333333333s;
+}
+.dish--3 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.dish--4 {
+  -webkit-animation-delay: 0.2666666667s;
+          animation-delay: 0.2666666667s;
+}
+.dish--5 {
+  -webkit-animation-delay: 0.3333333333s;
+          animation-delay: 0.3333333333s;
+}
+.dish--6 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.dish--7 {
+  -webkit-animation-delay: 0.4666666667s;
+          animation-delay: 0.4666666667s;
+}
+.dish--8 {
+  -webkit-animation-delay: 0.5333333333s;
+          animation-delay: 0.5333333333s;
+}
+.dish--9 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .dish--info {
@@ -503,23 +542,59 @@ footer a {
   padding: 40px 0px 60px;
 }
 
-.dish--select {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  height: 60px;
-  width: 60px;
-  color: #FFF;
-  font-weight: bold;
-  border-radius: 0px 20px 20px 0px;
-}
-
 .dish--animation {
   display: flex;
   align-items: flex-end;
 }
 
-.dish:hover + .dish--animation > .dish--select {
-  transform: scale(1.2);
+.dish--select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  height: 60px;
+  width: 0px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translateX(40px);
+  transform-origin: right;
+  transition: all 0.3s ease-in-out;
+}
+
+.dish:hover {
+  box-shadow: 3px 3px 5px #808080;
+}
+
+.dish:hover > .dish--info + .dish--animation > .dish--select {
+  width: 60px;
+  transform: translateX(0px);
+  transition: all 0.5s ease-in-out;
+}
+
+.dish:hover > .dish--info + .dish--animation > .dish--select > i {
+  transform: rotateZ(360deg);
+  transition: transform 0.5s 0.1s ease-in-out;
+}
+
+@-webkit-keyframes dish__revelation {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes dish__revelation {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

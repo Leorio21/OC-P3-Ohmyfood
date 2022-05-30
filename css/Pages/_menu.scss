@@ -1,5 +1,9 @@
 @use '../Utils/var';
 
+$num-dish: 9;
+$anim-dur: .6s;
+$anim-delay: calc($anim-dur / $num-dish);
+
 .menu {
     background-color: #F2F2F2;
 }
@@ -76,6 +80,13 @@
     background-color: #FFF;
     border-radius: 20px;
     box-shadow: 3px 3px 8px #cacaca;
+    overflow: hidden;
+    animation: dish__revelation $anim-dur both ease-in-out;
+    @for $i from 1 through $num-dish {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
 }
 
 .dish--info {
@@ -110,23 +121,47 @@
     padding: 40px 0px 60px;
 }
 
-.dish--select {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var.$color-tertiary;
-    height: 60px;
-    width: 60px;
-    color: #FFF;
-    font-weight: bold;
-    border-radius: 0px 20px 20px 0px;
-}
-
 .dish--animation {
     display: flex;
     align-items: flex-end;
 }
 
-.dish:hover + .dish--animation > .dish--select {
-    transform: scale(1.2);
+.dish--select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var.$color-tertiary;
+    height: 60px;
+    width: 0px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    transform: translateX(40px);
+    transform-origin: right;
+    transition: all 0.3s ease-in-out;
+}
+
+.dish:hover {
+    box-shadow: 3px 3px 5px #808080;
+}
+.dish:hover > .dish--info + .dish--animation > .dish--select {
+    width: 60px;
+    transform: translateX(0px);
+    transition: all .5s ease-in-out;
+}
+
+.dish:hover > .dish--info + .dish--animation > .dish--select > i {
+    transform: rotateZ(360deg);
+    transition: transform 0.5s 0.1s ease-in-out;
+}
+
+@keyframes dish__revelation {
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
