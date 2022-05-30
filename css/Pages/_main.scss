@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 200;
     width: 26px;
     height: 26px;
     background-color: var.$color-primary;
@@ -54,6 +55,7 @@
     box-shadow: 3px 3px 5px #cacaca;
     border-radius: 20px;
     font-size: 14px;
+    font-weight: bold;
 }
 
 .step--one::before {
@@ -69,6 +71,16 @@
 .step--three::before {
     content: '3';
     @include step--form;
+}
+
+.step:hover {
+    background-color: #F5EDFF;
+    transform: scale(1.02);
+    box-shadow: 3px 3px 5px #808080;
+}
+
+.step:hover > .icon--step {
+    color: var.$color-primary;
 }
 
 .icon {

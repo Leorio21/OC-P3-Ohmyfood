@@ -1,0 +1,21 @@
+@use '../Utils/var';
+
+.button {
+    display: block;
+    margin: auto;
+    padding: 15px 20px;
+    color: #FFF;
+    background: linear-gradient(var.$color-secondary, var.$color-primary);
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px #CACACA;
+    transition: 0.5s;
+}
+
+.button:hover {
+    filter: brightness(1.2);
+    box-shadow: 3px 3px 5px #808080;
+}
+
+.button--validation {
+    width: 150px;
+}

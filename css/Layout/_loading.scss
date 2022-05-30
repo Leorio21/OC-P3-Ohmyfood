@@ -1,10 +1,10 @@
 @use '../Utils/var';
 
-$num-bars: 3;
+$num-bars: 9;
 $anim-dur: 1000ms;
-$anim-delay: 200ms;
+$anim-delay: calc($anim-dur / $num-bars);
 
-.load {
+.load__container {
     width: 100%;
     height: 100%;
     background-color: #FFF;
@@ -16,31 +16,54 @@ $anim-delay: 200ms;
     z-index: 10;
 }
 
+.load {
+    position: relative;
+}
+
 .load__bar {
-    width: 3vh;
-    height: 10vh;
-    margin: 45vh 20px;
-    animation: loading__bars $anim-dur backwards infinite ease-in-out;
-    animation-direction: alternate;
-    @for $i from 1 through $num-bars {
-        &--#{$i} {
-            animation-delay: $anim-delay * $i;
-        }
-    }
-    
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    margin: 50vh 0px;
+    border-radius: 90% 0% 90% 10%;
+    transform-origin: 0% 100%;
     &--1 {
-        background-color: var.$color-primary;
+        background: linear-gradient(var.$color-primary, var.$color-tertiary);
     }
     &--2 {
-        background-color: var.$color-secondary;
+        background-color: var.$color-primary;
     }
     &--3 {
+        background-color: var.$color-primary;
+    }
+    &--4 {
+        background: linear-gradient(var.$color-secondary, var.$color-primary);
+    }
+    &--5 {
+        background-color: var.$color-secondary;
+    }
+    &--6 {
+        background-color: var.$color-secondary;
+    }
+    &--7 {
+        background: linear-gradient(var.$color-tertiary, var.$color-secondary);
+    }
+    &--8 {
         background-color: var.$color-tertiary;
+    }
+    &--9 {
+        background-color: var.$color-tertiary;
+    }
+    animation: loading__bars $anim-dur backwards infinite linear;
+    @for $i from 1 through $num-bars {
+        &--#{$i} {
+            animation-delay: $anim-delay * ($i - 1);
+        }
     }
 }
 
 @keyframes loading {
-    0%, 99% {
+    0%, 75% {
         opacity: 1;
         z-index: 10;
         overflow: hidden;
@@ -53,9 +76,9 @@ $anim-delay: 200ms;
 
 @keyframes loading__bars {
     0% {
-        transform: scaleY(0.2);
+        transform: rotateZ(0deg);
     }
     100% {
-        transform: scaleY(1.0);
+        transform: rotateZ(360deg);
     }
 }
