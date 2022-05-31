@@ -80,8 +80,8 @@ footer a {
   justify-content: center;
   position: fixed;
   opacity: 1;
-  -webkit-animation: loading 0ms forwards;
-          animation: loading 0ms forwards;
+  -webkit-animation: loading 3000ms forwards;
+          animation: loading 3000ms forwards;
   z-index: 10;
 }
 
