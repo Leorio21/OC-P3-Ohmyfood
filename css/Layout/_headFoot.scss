@@ -18,6 +18,20 @@ footer {
     background-color: #3b3b3b;
     padding: 20px 0px 40px 20px;
     color: #FFF;
+    @media screen and (min-width: 576px) {
+        align-items: center;
+    }
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    @media screen and (min-width: 576px) {
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
 }
 
 .title--footer {
