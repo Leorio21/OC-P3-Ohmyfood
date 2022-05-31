@@ -1,4 +1,4 @@
-Parcours OpenClassromm : Dévellopeur WEB
+Parcours OpenClassromm : Développeur WEB
 
 Projet 3 : Dynamisez une page web avec des animations CSS
 
