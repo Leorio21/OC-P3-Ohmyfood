@@ -1,7 +1,7 @@
 @use '../Utils/var';
 
 $num-bars: 9;
-$anim-dur: 1000ms;
+$anim-dur: 1500ms;
 $anim-delay: calc($anim-dur / $num-bars);
 
 .load__container {

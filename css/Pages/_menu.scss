@@ -1,7 +1,7 @@
 @use '../Utils/var';
 
 $num-dish: 10;
-$anim-dur: .6s;
+$anim-dur: 1s;
 $anim-delay: calc($anim-dur / $num-dish);
 
 .menu {
@@ -176,7 +176,7 @@ $anim-delay: calc($anim-dur / $num-dish);
     font-weight: bold;
     transform: translateX(40px);
     transform-origin: right;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .dish:hover {

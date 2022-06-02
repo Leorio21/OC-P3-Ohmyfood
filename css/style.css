@@ -96,8 +96,8 @@ footer a {
   margin: 42vh 0px;
   border-radius: 90% 0% 90% 10%;
   transform-origin: 0% 130%;
-  -webkit-animation: loading__bars 1000ms backwards infinite linear;
-          animation: loading__bars 1000ms backwards infinite linear;
+  -webkit-animation: loading__bars 1500ms backwards infinite linear;
+          animation: loading__bars 1500ms backwards infinite linear;
 }
 .load__bar--1 {
   background: linear-gradient(#9356DC, #99E2D0);
@@ -131,36 +131,36 @@ footer a {
           animation-delay: 0ms;
 }
 .load__bar--2 {
-  -webkit-animation-delay: 111.1111111111ms;
-          animation-delay: 111.1111111111ms;
+  -webkit-animation-delay: 166.6666666667ms;
+          animation-delay: 166.6666666667ms;
 }
 .load__bar--3 {
-  -webkit-animation-delay: 222.2222222222ms;
-          animation-delay: 222.2222222222ms;
-}
-.load__bar--4 {
   -webkit-animation-delay: 333.3333333333ms;
           animation-delay: 333.3333333333ms;
 }
+.load__bar--4 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
 .load__bar--5 {
-  -webkit-animation-delay: 444.4444444444ms;
-          animation-delay: 444.4444444444ms;
-}
-.load__bar--6 {
-  -webkit-animation-delay: 555.5555555556ms;
-          animation-delay: 555.5555555556ms;
-}
-.load__bar--7 {
   -webkit-animation-delay: 666.6666666667ms;
           animation-delay: 666.6666666667ms;
 }
+.load__bar--6 {
+  -webkit-animation-delay: 833.3333333333ms;
+          animation-delay: 833.3333333333ms;
+}
+.load__bar--7 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
 .load__bar--8 {
-  -webkit-animation-delay: 777.7777777778ms;
-          animation-delay: 777.7777777778ms;
+  -webkit-animation-delay: 1166.6666666667ms;
+          animation-delay: 1166.6666666667ms;
 }
 .load__bar--9 {
-  -webkit-animation-delay: 888.8888888889ms;
-          animation-delay: 888.8888888889ms;
+  -webkit-animation-delay: 1333.3333333333ms;
+          animation-delay: 1333.3333333333ms;
 }
 
 @-webkit-keyframes loading {
@@ -594,48 +594,48 @@ footer a {
   border-radius: 20px;
   box-shadow: 3px 3px 8px #cacaca;
   overflow: hidden;
-  -webkit-animation: dish__revelation 0.6s both ease-in-out;
-          animation: dish__revelation 0.6s both ease-in-out;
+  -webkit-animation: dish__revelation 1s both ease-in-out;
+          animation: dish__revelation 1s both ease-in-out;
 }
 .dish--1 {
-  -webkit-animation-delay: 0.06s;
-          animation-delay: 0.06s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 .dish--2 {
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 .dish--3 {
-  -webkit-animation-delay: 0.18s;
-          animation-delay: 0.18s;
-}
-.dish--4 {
-  -webkit-animation-delay: 0.24s;
-          animation-delay: 0.24s;
-}
-.dish--5 {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
+.dish--4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.dish--5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
 .dish--6 {
-  -webkit-animation-delay: 0.36s;
-          animation-delay: 0.36s;
-}
-.dish--7 {
-  -webkit-animation-delay: 0.42s;
-          animation-delay: 0.42s;
-}
-.dish--8 {
-  -webkit-animation-delay: 0.48s;
-          animation-delay: 0.48s;
-}
-.dish--9 {
-  -webkit-animation-delay: 0.54s;
-          animation-delay: 0.54s;
-}
-.dish--10 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
+}
+.dish--7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+.dish--8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.dish--9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.dish--10 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .dish--info {
@@ -687,7 +687,7 @@ footer a {
   font-weight: bold;
   transform: translateX(40px);
   transform-origin: right;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .dish:hover {
