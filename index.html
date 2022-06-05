@@ -18,42 +18,40 @@
         <title>OhMyFood</title>
     </head>
     <body>
-        <div class="load__container">
-            <div class="load">
-                <div class="load__bar load__bar--1"></div>
-                <div class="load__bar load__bar--2"></div>
-                <div class="load__bar load__bar--3"></div>
-                <div class="load__bar load__bar--4"></div>
-                <div class="load__bar load__bar--5"></div>
-                <div class="load__bar load__bar--6"></div>
-                <div class="load__bar load__bar--7"></div>
-                <div class="load__bar load__bar--8"></div>
-                <div class="load__bar load__bar--9"></div>
-            </div>
+        <div class="load">
+            <div class="load__bar load__bar--1"></div>
+            <div class="load__bar load__bar--2"></div>
+            <div class="load__bar load__bar--3"></div>
+            <div class="load__bar load__bar--4"></div>
+            <div class="load__bar load__bar--5"></div>
+            <div class="load__bar load__bar--6"></div>
+            <div class="load__bar load__bar--7"></div>
+            <div class="load__bar load__bar--8"></div>
+            <div class="load__bar load__bar--9"></div>
         </div>
-        <header>
-            <img src="./images/logo/ohmyfood.png" alt="Logo OhMyFood" class="header--logo">
+        <header class="header">
+            <img src="./images/logo/ohmyfood.png" alt="Logo OhMyFood" class="header__logo">
         </header>
         <main>
             <div class="location">
-                <i class="fa-solid fa-location-dot icon icon--location"></i>Paris, Belleville
+                <i class="fa-solid fa-location-dot location__icon"></i>Paris, Belleville
             </div>
             <div class="navigation">
                 <section class="presentation">
                     <h1 class="title">Réservez le menu qui vous convient</h1>
-                    <p class="presentation--text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                     <a href="#restaurants" class="button">Explorer nos restaurants</a>
                 </section>
-                <section id="working">
-                    <h2 class="title title--working">Fonctionnement</h2>
-                    <div class="step step--one">
-                        <i class="fa-solid fa-mobile-screen-button icon icon--step"></i>Choisissez un restaurant
+                <section id="working" class="working">
+                    <h2 class="title working__title">Fonctionnement</h2>
+                    <div class="step step--1">
+                        <i class="fa-solid fa-mobile-screen-button step__icon"></i>Choisissez un restaurant
                     </div>
-                    <div class="step step--two">
-                        <i class="fa-solid fa-list-ul icon icon--step"></i>Composez votre menu
+                    <div class="step step--2">
+                        <i class="fa-solid fa-list-ul step__icon"></i>Composez votre menu
                     </div>
-                    <div class="step step--three">
-                        <i class="fa-solid fa-store icon icon--step"></i>Dégustez au restaurant
+                    <div class="step step--3">
+                        <i class="fa-solid fa-store step__icon"></i>Dégustez au restaurant
                     </div>
                 </section>
             </div>
@@ -123,13 +121,13 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <h2 class="title--footer title--primary">ohmyfood</h2>
+        <footer class="footer">
+            <h2 class="footer__title title--primary">ohmyfood</h2>
             <div class="footer__menu">
-                <a href="#"><i class="fa-solid fa-utensils icon--footer"></i>Proposer un restaurant</a>
-                <a href="#"><i class="fa-solid fa-handshake-angle icon--footer"></i>Devenir partenaire</a>
-                <a href="#">Mentions légales</a>
-                <a href="mailto:contact@ohmyfood.com">Contact</a>
+                <a href="#" class="footer__link"><i class="fa-solid fa-utensils footer__icon"></i>Proposer un restaurant</a>
+                <a href="#" class="footer__link"><i class="fa-solid fa-handshake-angle footer__icon"></i>Devenir partenaire</a>
+                <a href="#" class="footer__link">Mentions légales</a>
+                <a href="mailto:contact@ohmyfood.com" class="footer__link">Contact</a>
             </div>
         </footer>
     </body>

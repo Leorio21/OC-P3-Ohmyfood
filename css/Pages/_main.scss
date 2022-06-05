@@ -31,10 +31,10 @@
     padding: 20px 0px;
     background-color: #e2e2e2;
     border-top: 2px solid #d1d1d1;
-}
-
-.icon--location {
-    color: #474747;
+    &__icon {
+        color: #474747;
+        margin-right: 20px;
+    }
 }
 
 .presentation {
@@ -50,7 +50,7 @@
     }
 }
 
-#working {
+.working {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -61,10 +61,9 @@
     @media screen and (min-width: 991px) {
         width: 40%;
     }
-}
-
-.title--working {
-    margin-bottom: 20px;
+    &__title {
+        margin-bottom: 20px;
+    }
 }
 
 .step {
@@ -78,39 +77,36 @@
     border-radius: 20px;
     font-size: 14px;
     font-weight: bold;
-}
-
-.step--one::before {
-    content: '1';
-    @include step--form;
-}
-
-.step--two::before {
-    content: '2';
-    @include step--form;
-}
-
-.step--three::before {
-    content: '3';
-    @include step--form;
-}
-
-.step:hover {
-    background-color: #F5EDFF;
-    transform: scale(1.02);
-    box-shadow: 3px 3px 5px #808080;
-}
-
-.step:hover > .icon--step {
-    color: var.$color-primary;
-}
-
-.icon {
-    margin-right: 20px;
-}
-
-.icon--step {
-    color: #818181;
+    @for $i from 1 through 3 {
+        &--#{$i}::before {
+            content: '#{$i}';
+            color: #FFF;
+            position: absolute;
+            left: -13px;
+            top: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 200;
+            width: 26px;
+            height: 26px;
+            background-color: var.$color-primary;
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+    &:hover {
+        background-color: #F5EDFF;
+        transform: scale(1.02);
+        box-shadow: 3px 3px 5px #808080;
+        & > .step__icon {
+            color: var.$color-primary;
+        }
+    }
+    &__icon {
+        margin-right: 20px;
+        color: #818181;
+    }
 }
 
 #restaurants {

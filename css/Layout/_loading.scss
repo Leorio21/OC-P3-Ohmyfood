@@ -4,7 +4,7 @@ $num-bars: 9;
 $anim-dur: 1500ms;
 $anim-delay: calc($anim-dur / $num-bars);
 
-.load__container {
+.load {
     width: 100%;
     height: 100%;
     background-color: #FFF;
@@ -14,51 +14,20 @@ $anim-delay: calc($anim-dur / $num-bars);
     opacity: 1;
     animation: loading 3000ms forwards;
     z-index: 10;
-}
-
-.load {
-    position: relative;
-}
-
-.load__bar {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    margin: 42vh 0px;
-    border-radius: 90% 0% 90% 10%;
-    transform-origin: 0% 130%;
-    &--1 {
-        background: linear-gradient(var.$color-primary, var.$color-tertiary);
-    }
-    &--2 {
-        background-color: var.$color-primary;
-    }
-    &--3 {
-        background-color: var.$color-primary;
-    }
-    &--4 {
-        background: linear-gradient(var.$color-secondary, var.$color-primary);
-    }
-    &--5 {
-        background-color: var.$color-secondary;
-    }
-    &--6 {
-        background-color: var.$color-secondary;
-    }
-    &--7 {
-        background: linear-gradient(var.$color-tertiary, var.$color-secondary);
-    }
-    &--8 {
-        background-color: var.$color-tertiary;
-    }
-    &--9 {
-        background-color: var.$color-tertiary;
-    }
-    animation: loading__bars $anim-dur backwards infinite linear;
-    @for $i from 1 through $num-bars {
-        &--#{$i} {
-            animation-delay: $anim-delay * ($i - 1);
+    &__bar {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        margin: 42vh 0px;
+        border-radius: 90% 0% 90% 10%;
+        transform-origin: 0% 130%;
+        @for $i from 1 through $num-bars {
+            &--#{$i} {
+                background: nth(var.$list_loading_color, $i);
+                animation-delay: $anim-delay * ($i - 1);
+            }
         }
+        animation: loading__bars $anim-dur backwards infinite linear;
     }
 }
 
