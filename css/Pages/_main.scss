@@ -109,24 +109,22 @@
     }
 }
 
-#restaurants {
+.restaurant {
     padding: 50px 20px;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
 }
 
 .restaurant--like {
     position: relative;
-}
-
-.title--restaurant {
-    margin-bottom: 20px;
-}
-
-.restaurant__list {
-    display: flex;
-    flex-flow: row wrap;
-    row-gap: 20px;
-    column-gap: 20px;
 }
