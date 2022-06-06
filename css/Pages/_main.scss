@@ -1,25 +1,10 @@
 @use '../Utils/var';
-
-@mixin step--form {
-    color: #FFF;
-    position: absolute;
-    left: -13px;
-    top: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 200;
-    width: 26px;
-    height: 26px;
-    background-color: var.$color-primary;
-    border-radius: 50%;
-    z-index: 1;
-}
+@use '../Utils/mixinMQ';
 
 .navigation {
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: 991px) {
+    @include mixinMQ.desktop {
         flex-direction: row-reverse;
     }
 }
@@ -44,7 +29,7 @@
     text-align: center;
     padding: 30px 30px 50px 30px;
     background-color: #F2F2F2;
-    @media screen and (min-width: 991px) {
+    @include mixinMQ.desktop {
         width: 60%;
         background-color: #FFF;
     }
@@ -55,10 +40,10 @@
     flex-direction: column;
     row-gap: 20px;
     padding: 30px 25px 40px 25px;
-    @media screen and (min-width: 576px) {
+    @include mixinMQ.tablette {
         align-items: center;
     }
-    @media screen and (min-width: 991px) {
+    @include mixinMQ.desktop {
         width: 40%;
     }
     &__title {

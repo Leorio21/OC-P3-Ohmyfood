@@ -1,11 +1,13 @@
+@use '../Utils/mixinMQ';
+
 .header {
     width: 100%;
     text-align: center;
     padding: 15px 0px;
     position: relative;
     &__logo {
-    width: 50%;
-    max-width: 392px;
+        width: 50%;
+        max-width: 392px;
     }
 }
 
@@ -17,14 +19,14 @@
     background-color: #3b3b3b;
     padding: 20px 0px 40px 20px;
     color: #FFF;
-    @media screen and (min-width: 576px) {
+    @include mixinMQ.tablette {
         align-items: center;
     }
     &__menu {
         display: flex;
         flex-direction: column;
         row-gap: 8px;
-        @media screen and (min-width: 576px) {
+        @include mixinMQ.tablette {
             flex-flow: row wrap;
             width: 100%;
             justify-content: space-around;

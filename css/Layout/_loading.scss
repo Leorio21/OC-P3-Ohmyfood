@@ -35,12 +35,10 @@ $anim-delay: calc($anim-dur / $num-bars);
 @keyframes loading {
     0%, 75% {
         opacity: 1;
-        z-index: 10;
-        overflow: hidden;
     }
     100% {
         opacity: 0;
-        z-index: -1;
+        visibility: hidden;
     }
 }
 
