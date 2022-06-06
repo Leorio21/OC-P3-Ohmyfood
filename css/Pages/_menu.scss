@@ -50,7 +50,7 @@ $anim-delay: calc($anim-dur / $num-dish);
         }
     }
     &__title {
-        @media screen and (min-width: 576px) {
+        @include mixinMQ.tablette {
             font-size: 25px;
         }
     }
@@ -72,7 +72,7 @@ $anim-delay: calc($anim-dur / $num-dish);
     flex-direction: column;
     row-gap: 20px;
     padding: 15px 15px 30px 15px;
-    @media screen and (min-width: 991px) {
+    @include mixinMQ.desktop {
         width: 30%;
     }
     &__title {
