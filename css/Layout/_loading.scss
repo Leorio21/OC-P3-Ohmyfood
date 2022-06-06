@@ -10,6 +10,7 @@ $anim-delay: calc($anim-dur / $num-bars);
     background-color: #FFF;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: fixed;
     opacity: 1;
     animation: loading 3000ms forwards;
@@ -18,13 +19,13 @@ $anim-delay: calc($anim-dur / $num-bars);
         position: absolute;
         width: 40px;
         height: 40px;
-        margin: 42vh 0px;
         border-radius: 90% 0% 90% 10%;
         transform-origin: 0% 130%;
         @for $i from 1 through $num-bars {
             &--#{$i} {
                 background: nth(var.$list_loading_color, $i);
                 animation-delay: $anim-delay * ($i - 1);
+                z-index: calc(10 - #{$i});
             }
         }
         animation: loading__bars $anim-dur backwards infinite linear;

@@ -141,6 +141,7 @@ a {
   background-color: #FFF;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: fixed;
   opacity: 1;
   -webkit-animation: loading 3000ms forwards;
@@ -151,7 +152,6 @@ a {
   position: absolute;
   width: 40px;
   height: 40px;
-  margin: 42vh 0px;
   border-radius: 90% 0% 90% 10%;
   transform-origin: 0% 130%;
   -webkit-animation: loading__bars 1500ms backwards infinite linear;
@@ -161,46 +161,55 @@ a {
   background: linear-gradient(#9356DC, #99E2D0);
   -webkit-animation-delay: 0ms;
           animation-delay: 0ms;
+  z-index: calc(10 - 1);
 }
 .load__bar--2 {
   background: #9356DC;
   -webkit-animation-delay: 166.6666666667ms;
           animation-delay: 166.6666666667ms;
+  z-index: calc(10 - 2);
 }
 .load__bar--3 {
   background: #9356DC;
   -webkit-animation-delay: 333.3333333333ms;
           animation-delay: 333.3333333333ms;
+  z-index: calc(10 - 3);
 }
 .load__bar--4 {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-animation-delay: 500ms;
           animation-delay: 500ms;
+  z-index: calc(10 - 4);
 }
 .load__bar--5 {
   background: #FF79DA;
   -webkit-animation-delay: 666.6666666667ms;
           animation-delay: 666.6666666667ms;
+  z-index: calc(10 - 5);
 }
 .load__bar--6 {
   background: #FF79DA;
   -webkit-animation-delay: 833.3333333333ms;
           animation-delay: 833.3333333333ms;
+  z-index: calc(10 - 6);
 }
 .load__bar--7 {
   background: linear-gradient(#99E2D0, #FF79DA);
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
+  z-index: calc(10 - 7);
 }
 .load__bar--8 {
   background: #99E2D0;
   -webkit-animation-delay: 1166.6666666667ms;
           animation-delay: 1166.6666666667ms;
+  z-index: calc(10 - 8);
 }
 .load__bar--9 {
   background: #99E2D0;
   -webkit-animation-delay: 1333.3333333333ms;
           animation-delay: 1333.3333333333ms;
+  z-index: calc(10 - 9);
 }
 
 @-webkit-keyframes loading {
