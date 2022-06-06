@@ -67,6 +67,36 @@
   position: relative;
 }
 
+.icon__like {
+  font-size: 22px;
+  color: #818181;
+  z-index: 0;
+}
+.icon__like--fill {
+  position: absolute;
+  left: 0px;
+  font-weight: bold;
+  font-size: 22px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
+}
+.icon__like--fill:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.icon__backIndex {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  left: 15px;
+  top: 35%;
+}
+
 * {
   margin: 0px;
   box-sizing: border-box;
@@ -251,36 +281,6 @@ a {
     transform: rotateZ(360deg);
   }
 }
-.icon__like {
-  font-size: 22px;
-  color: #818181;
-  z-index: 0;
-}
-.icon__like--fill {
-  position: absolute;
-  left: 0px;
-  font-weight: bold;
-  font-size: 22px;
-  background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  z-index: 1;
-}
-.icon__like--fill:hover {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
-.icon__backIndex {
-  position: absolute;
-  font-size: 22px;
-  font-weight: bold;
-  left: 15px;
-  top: 35%;
-}
-
 .navigation {
   display: flex;
   flex-direction: column;
