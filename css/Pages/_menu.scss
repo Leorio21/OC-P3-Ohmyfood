@@ -165,7 +165,9 @@ $anim-delay: calc($anim-dur / $num-dish);
 }
 
 .validation {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 40px 0px 60px;
 }
 
