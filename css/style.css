@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
   width: 225px;
   height: 50px;
   color: #FFF;
@@ -307,8 +308,8 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 30px 30px 50px 30px;
   background-color: #F2F2F2;
 }
