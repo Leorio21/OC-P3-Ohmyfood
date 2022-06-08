@@ -1,16 +1,19 @@
 @use '../Utils/var';
 
 .button {
-    display: block;
-    margin: auto;
-    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    height: 50px;
     color: #FFF;
     background: linear-gradient(var.$color-secondary, var.$color-primary);
     border-radius: 50px;
     box-shadow: 3px 3px 5px #CACACA;
+    filter: brightness(1);
     transition: all 0.3s ease-in-out;
     &:hover {
-        filter: brightness(1.2);
+        filter: brightness(1.1);
         box-shadow: 3px 3px 5px #808080;
         transition: all 0.3s ease-in-out;
     }
