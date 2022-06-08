@@ -8,6 +8,7 @@
     background: linear-gradient(var.$color-secondary, var.$color-primary);
     border-radius: 50px;
     box-shadow: 3px 3px 5px #CACACA;
+        filter: brightness(1.2);
     transition: all 0.3s ease-in-out;
     &:hover {
         filter: brightness(1.2);
